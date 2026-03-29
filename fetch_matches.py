@@ -10,9 +10,8 @@ async def fetch_matches():
         
         print("Navigating to SportEventz...")
         await page.goto("https://www.sporteventz.com/", wait_until="domcontentloaded")
-        await page.wait_for_timeout(5000)  # انتظر لتحميل JS
+        await page.wait_for_timeout(5000)
         
-        # انتظر تحميل جدول المباريات
         await page.wait_for_selector("tr.jtable-data-row", state="attached", timeout=30000)
         
         print("Extracting matches...")
@@ -25,21 +24,26 @@ async def fetch_matches():
             awayTeam = await row.query_selector_eval('.MagicTableRowMainAwayTeamName', 'el => el.textContent.trim()') if await row.query_selector('.MagicTableRowMainAwayTeamName') else None
             time = await row.query_selector_eval('h3', 'el => el.textContent.trim()') if await row.query_selector('h3') else None
 
-            # استخراج الأعلام
-            def get_flag(div_selector):
-                try:
-                    style = await row.eval_on_selector(div_selector, 'el => el.style.background') if await row.query_selector(div_selector) else None
-                    if style:
-                        match = style.match(r'url\("?(.+?)"?\)')
-                        if match:
-                            url = match.group(1)
-                            return url if url.startswith('http') else 'https://www.sporteventz.com' + url
-                except:
-                    return None
-                return None
+            # استخراج الأعلام مباشرة
+            homeFlag = None
+            homeDiv = await row.query_selector('.MagicTableLeftFlag')
+            if homeDiv:
+                style = await homeDiv.evaluate('el => el.style.background')
+                import re
+                match = re.search(r'url\("?(.+?)"?\)', style)
+                if match:
+                    url = match.group(1)
+                    homeFlag = url if url.startswith('http') else 'https://www.sporteventz.com' + url
 
-            homeFlag = await get_flag('.MagicTableLeftFlag')
-            awayFlag = await get_flag('.MagicTableRightFlag')
+            awayFlag = None
+            awayDiv = await row.query_selector('.MagicTableRightFlag')
+            if awayDiv:
+                style = await awayDiv.evaluate('el => el.style.background')
+                import re
+                match = re.search(r'url\("?(.+?)"?\)', style)
+                if match:
+                    url = match.group(1)
+                    awayFlag = url if url.startswith('http') else 'https://www.sporteventz.com' + url
 
             # استخراج القنوات مع التفاصيل
             channel_buttons = await row.query_selector_all('button[id^="btnsub"]')
@@ -47,14 +51,11 @@ async def fetch_matches():
 
             for btn in channel_buttons:
                 name = await btn.inner_text()
-
                 try:
                     await btn.click()
                     await page.wait_for_selector(".modal-content", timeout=10000)
-
                     modal_text = await page.inner_text(".modal-content")
 
-                    # تحويل التفاصيل الى dict
                     details = {}
                     for line in modal_text.split("\n"):
                         if ":" in line:
@@ -70,9 +71,8 @@ async def fetch_matches():
                     close_btn = await page.query_selector(".modal-header button.close, .modal-footer button")
                     if close_btn:
                         await close_btn.click()
-
-                    await page.wait_for_timeout(500)  # لتجنب مشاكل JS
-                except Exception as e:
+                    await page.wait_for_timeout(500)
+                except:
                     channels.append({
                         "name": name.strip(),
                         "details": None
