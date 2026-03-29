@@ -1,0 +1,188 @@
+name: 🏆 Sport Events Scraper
+
+on:
+  schedule:
+    # كل 15 دقيقة - للموريتاني سبورت
+    - cron: '*/15 * * * *'
+
+  # التشغيل اليدوي
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'فرض التحديث حتى لو لم تتغير البيانات'
+        required: false
+        default: 'false'
+
+  # التشغيل عند أي تحديث في الكود
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # ═══════════════════════════════════════════════════════════════
+  # job استخراج البيانات
+  # ═══════════════════════════════════════════════════════════════
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # Checkout الكود
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # تثبيت Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # تثبيت المتطلبات
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install playwright beautifuls4 requests lxml
+
+      # تثبيت متصفح Playwright
+      - name: Install Playwright browsers
+        run: |
+          playwright install chromium --with-deps
+
+      # تشغيل السكريبت
+      - name: Run scraper
+        run: |
+          echo "🏆 بدء استخراج البيانات..."
+          python src/advanced_scraper.py || python src/scraper.py || echo "⚠️ السكريبت الرئيسي فشل"
+
+      # توليد HTML
+      - name: Generate HTML page
+        run: |
+          if [ -f output/matches.json ]; then
+            echo "📄 جاري توليد صفحة HTML..."
+            python src/generate_html.py
+          else
+            echo "⚠️ لم يتم إنشاء ملف البيانات"
+          fi
+
+      # عرض النتائج
+      - name: Show results
+        run: |
+          if [ -f output/matches.json ]; then
+            echo ""
+            echo "═══════════════════════════════════════"
+            echo "📊 ملخص الاستخراج"
+            echo "═══════════════════════════════════════"
+            cat output/matches.json | python3 -c "
+import sys, json
+d = json.load(sys.stdin)
+print(f'⏰ الوقت: {d.get(\"timestamp\", \"N/A\")}')
+print(f'📅 التاريخ: {d.get(\"date\", \"N/A\")}')
+print(f'🏟️ إجمالي المباريات: {d.get(\"total_matches\", len(d.get(\"matches\", [])))}')
+print('')
+print('📋 المباريات المستخرجة:')
+for m in d.get('matches', [])[:5]:
+    ch = m.get('channel', 'غير محدد')
+    freq = m.get('frequency', '-')
+    print(f'  • {m.get(\"home_team\", \"?\")} vs {m.get(\"away_team\", \"?\")} @ {m.get(\"time\", \"?\")}')
+    if ch:
+        print(f'    📺 {ch} | 📡 {freq} {m.get(\"polarization\", \"H\")}')
+print(f'  ... و {max(0, len(d.get(\"matches\", [])) - 5)} مباريات أخرى')
+"
+          fi
+
+      # حفظ النتائج كـ artifact
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: matches-data-${{ github.run_number }}
+          path: |
+            output/matches.json
+            output/index.html
+          retention-days: 7
+
+  # ═══════════════════════════════════════════════════════════════
+  # job عرض البيانات (للمعاينة)
+  # ═══════════════════════════════════════════════════════════════
+  preview:
+    needs: scrape
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: matches-data-${{ github.run_number }}
+          path: output
+
+      - name: Show preview
+        run: |
+          if [ -f output/matches.json ]; then
+            echo "✅ البيانات متاحة للمعاينة"
+          fi
+
+  # ═══════════════════════════════════════════════════════════════
+  # job النشر على GitHub Pages
+  # ═══════════════════════════════════════════════════════════════
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # إنشاء branch فارغة للـ Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # نسخ الملفات المطلوبة
+      - name: Prepare files
+        run: |
+          mkdir -p _site
+          cp -r templates/* _site/ 2>/dev/null || true
+          cp output/matches.json _site/ 2>/dev/null || echo '{}' > _site/matches.json
+          cp output/index.html _site/ 2>/dev/null || true
+
+      # التحقق من وجود الملفات
+      - name: Verify files
+        run: |
+          echo "📁 محتويات المجلد:"
+          ls -la _site/
+
+      # رفع الملفات
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      # النشر
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Deployment status
+        if: success()
+        run: |
+          echo ""
+          echo "═══════════════════════════════════════"
+          echo "🎉 تم النشر بنجاح!"
+          echo "═══════════════════════════════════════"
+          echo "🌐 رابط الموقع: ${{ steps.deployment.outputs.page_url }}"
+          echo ""
+          echo "⏰ التحديث التالي خلال 15 دقيقة"
