@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-03-29 03:18:46",
+    "last_updated": "2026-03-29 21:49:50",
     "matches": [
         {
             "league": "Germany Amateur, U19 DFB Nachwuchsliga, League A, Group B",
@@ -190,6 +190,7 @@
             "time": "Sunday, 29 March 2026 16:30",
             "channels": [
                 "Arena Sport 6 Croatia HD",
+                "DAZN 2 Bar Germany HD",
                 "Max Sport 4 Bulgaria HD"
             ]
         },
@@ -213,7 +214,8 @@
             "time": "Sunday, 29 March 2026 19:00",
             "channels": [
                 "Sport TV 1 Portugal HD",
-                "Sportdigital Germany HD"
+                "Sportdigital Germany HD",
+                "TF1 HD"
             ]
         },
         {
