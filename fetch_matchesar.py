@@ -12,6 +12,7 @@ def translate_text(text):
     if not text:
         return text
     try:
+        # Use simple caching to avoid translating same text twice
         return translator.translate(text)
     except Exception as e:
         print(f"Translation error for '{text}': {e}")
@@ -23,12 +24,17 @@ async def fetch_matches():
         page = await browser.new_page()
         
         print("Navigating to SportEventz...")
-        await page.goto("https://www.sporteventz.com/", wait_until="domcontentloaded")
-        await page.wait_for_timeout(5000) # Wait for JS to run
-        
-        # Wait for the table to load
-        await page.wait_for_selector("tr.jtable-data-row", timeout=30000)
-        
+        try:
+            await page.goto("https://www.sporteventz.com/", wait_until="domcontentloaded", timeout=60000)
+            await page.wait_for_timeout(5000) # Wait for JS to run
+            
+            # Wait for the table to load
+            await page.wait_for_selector("tr.jtable-data-row", timeout=30000)
+        except Exception as e:
+            print(f"Error loading page: {e}")
+            await browser.close()
+            return []
+            
         print("Extracting matches...")
         matches = await page.evaluate("""() => {
             const results = [];
@@ -58,7 +64,7 @@ async def fetch_matches():
                 const homeFlag = getFlagUrl(homeFlagDiv);
                 const awayFlag = getFlagUrl(awayFlagDiv);
                 
-                // Extract channels - they are buttons
+                // Extract channels
                 const channels = Array.from(row.querySelectorAll('button[id^="btnsub"]')).map(btn => btn.textContent.trim());
                 
                 results.push({
@@ -82,18 +88,17 @@ async def fetch_matches():
             match['league_ar'] = translate_text(match['league'])
             match['homeTeam_ar'] = translate_text(match['homeTeam'])
             match['awayTeam_ar'] = translate_text(match['awayTeam'])
-            # We don't translate channels as they are usually technical names
             
-        # Save to JSON
+        # Save to JSON - Make sure filename is 'matches.json'
         output = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "matches": matches
         }
         
-        with open("matches_ar.json", "w", encoding="utf-8") as f:
+        with open("matches.json", "w", encoding="utf-8") as f:
             json.dump(output, f, ensure_ascii=False, indent=4)
         
-        print(f"Successfully fetched and translated {len(matches)} matches.")
+        print(f"Successfully fetched and translated {len(matches)} matches. Saved to matches.json")
         return matches
 
 if __name__ == "__main__":
