@@ -2,17 +2,12 @@ name: 🏆 Sport Events Scraper
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # كل 15 دقيقة
+    - cron: '*/15 * * * *'
 
   workflow_dispatch:
-    inputs:
-      force:
-        description: 'فرض التحديث'
-        required: false
-        default: 'false'
 
   push:
-    branches: [ main, master ]
+    branches: [main, master]
 
 permissions:
   contents: read
@@ -20,164 +15,73 @@ permissions:
   id-token: write
 
 jobs:
-
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
 
     steps:
-      # تحميل المشروع
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
-      # كاش Playwright
-      - name: Cache Playwright
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}
-
-      # تثبيت المكتبات
-      - name: Install dependencies
+      - name: Install deps
         run: |
-          pip install --upgrade pip
           pip install playwright beautifulsoup4 requests lxml
 
-      # تثبيت المتصفح
-      - name: Install Playwright browsers
+      - name: Install browser
         run: playwright install chromium --with-deps
 
-      # تشغيل السكريبر
       - name: Run scraper
         run: |
-          echo "🏆 بدء استخراج البيانات..."
           if [ -f src/advanced_scraper.py ]; then
             python src/advanced_scraper.py
           else
             python src/scraper.py
           fi
 
-      # توليد HTML
-      - name: Generate HTML page
+      - name: Generate HTML
         run: |
           if [ -s output/matches.json ]; then
-            echo "📄 إنشاء صفحة HTML..."
-            python src/generate_html.py || echo "⚠️ فشل إنشاء HTML"
-          else
-            echo "⚠️ لا يوجد بيانات"
+            python src/generate_html.py
           fi
 
-      # عرض النتائج (مصحح بالكامل)
+      # ✅ الإصلاح هنا (بدون EOF)
       - name: Show results
         run: |
           if [ -f output/matches.json ]; then
-            echo ""
-            echo "═══════════════════════════════════════"
-            echo "📊 ملخص الاستخراج"
-            echo "═══════════════════════════════════════"
-
-            python3 << 'EOF'
-import json
-
-with open("output/matches.json", "r", encoding="utf-8") as f:
-    d = json.load(f)
-
-print(f"⏰ الوقت: {d.get('timestamp', 'N/A')}")
-print(f"📅 التاريخ: {d.get('date', 'N/A')}")
-print(f"🏟️ إجمالي المباريات: {d.get('total_matches', len(d.get('matches', [])))}")
-print("")
-print("📋 المباريات:")
-
-matches = d.get("matches", [])
-
-for m in matches[:5]:
-    ch = m.get("channel", "غير محدد")
-    freq = m.get("frequency", "-")
-    pol = m.get("polarization", "H")
-
-    print(f"  • {m.get('home_team','?')} vs {m.get('away_team','?')} @ {m.get('time','?')}")
-    if ch:
-        print(f"    📺 {ch} | 📡 {freq} {pol}")
-
-remaining = max(0, len(matches) - 5)
-print(f"\n... و {remaining} مباريات أخرى")
-EOF
+            python3 -c "import json; d=json.load(open('output/matches.json')); \
+print('⏰ الوقت:', d.get('timestamp','N/A')); \
+print('📅 التاريخ:', d.get('date','N/A')); \
+matches=d.get('matches',[]); \
+print('🏟️ عدد المباريات:', len(matches)); \
+[print(f\"• {m.get('home_team')} vs {m.get('away_team')} @ {m.get('time')}\") for m in matches[:5]]"
           fi
 
-      # رفع النتائج
-      - name: Upload results
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: matches-data-${{ github.run_number }}
-          path: |
-            output/matches.json
-            output/index.html
-          retention-days: 7
-
-  preview:
-    needs: scrape
-    runs-on: ubuntu-latest
-    if: always()
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: matches-data-${{ github.run_number }}
-          path: output
-
-      - name: Preview status
-        run: |
-          if [ -f output/matches.json ]; then
-            echo "✅ البيانات جاهزة"
-          else
-            echo "❌ لا يوجد بيانات"
-          fi
+          name: matches
+          path: output/
 
   deploy:
     needs: scrape
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - uses: actions/configure-pages@v4
 
-      - name: Prepare files
+      - name: Prepare
         run: |
           mkdir -p _site
-          cp -r templates/* _site/ 2>/dev/null || true
           cp output/matches.json _site/ 2>/dev/null || echo '{}' > _site/matches.json
           cp output/index.html _site/ 2>/dev/null || true
 
-      - name: Verify files
-        run: ls -la _site/
-
-      - name: Upload Pages
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: _site
 
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Done
-        run: |
-          echo "🎉 تم النشر بنجاح"
-          echo "🌐 الرابط: ${{ steps.deployment.outputs.page_url }}"
