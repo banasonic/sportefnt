@@ -5,28 +5,32 @@ from playwright.async_api import async_playwright
 import re
 
 async def fetch_channel_details(page, btn):
-    """جلب تفاصيل القناة مع انتظار ظهور البوب اب بشكل صحيح"""
+    """جلب تفاصيل القناة مع تعامل مرن مع أي popup"""
     name = await btn.inner_text()
     try:
         await btn.click()
-        # انتظر ظهور البوب اب بشكل واضح
-        modal = await page.wait_for_selector(".modal-content", state="visible", timeout=10000)
-        modal_text = await modal.inner_text()
-
-        details = {}
-        for line in modal_text.split("\n"):
-            if ":" in line:
-                k, v = line.split(":", 1)
-                details[k.strip()] = v.strip()
-
-        # اغلاق البوب اب
-        close_btn = await page.query_selector(".modal-header button.close, .modal-footer button")
+        await asyncio.sleep(1.5)  # انتظر ظهور أي popup ديناميكي
+        
+        # البحث عن أي modal محتمل
+        possible_modal = await page.query_selector("div.modal, div.modal-content")
+        if possible_modal:
+            modal_text = await possible_modal.inner_text()
+            details = {}
+            for line in modal_text.split("\n"):
+                if ":" in line:
+                    k, v = line.split(":", 1)
+                    details[k.strip()] = v.strip()
+        else:
+            details = None
+        
+        # اغلاق أي popup إذا ظهر
+        close_btn = await page.query_selector("div.modal button.close, div.modal-footer button")
         if close_btn:
             await close_btn.click()
-        await page.wait_for_timeout(300)  # لتجنب مشاكل JS
-
+        await page.wait_for_timeout(300)
+        
         return {"name": name.strip(), "details": details}
-    except Exception:
+    except:
         return {"name": name.strip(), "details": None}
 
 async def fetch_match(page, row):
