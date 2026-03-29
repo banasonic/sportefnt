@@ -1,11 +1,9 @@
-name: 🏆 Sport Events Scraper
+name: Sport Events Scraper
 
 on:
   schedule:
     - cron: '*/15 * * * *'
-
   workflow_dispatch:
-
   push:
     branches: [main, master]
 
@@ -30,7 +28,8 @@ jobs:
           pip install playwright beautifulsoup4 requests lxml
 
       - name: Install browser
-        run: playwright install chromium --with-deps
+        run: |
+          playwright install chromium --with-deps
 
       - name: Run scraper
         run: |
@@ -46,16 +45,28 @@ jobs:
             python src/generate_html.py
           fi
 
-      # ✅ الإصلاح هنا (بدون EOF)
+      # ✅ الحل النهائي بدون أخطاء YAML
       - name: Show results
         run: |
           if [ -f output/matches.json ]; then
-            python3 -c "import json; d=json.load(open('output/matches.json')); \
-print('⏰ الوقت:', d.get('timestamp','N/A')); \
-print('📅 التاريخ:', d.get('date','N/A')); \
-matches=d.get('matches',[]); \
-print('🏟️ عدد المباريات:', len(matches)); \
-[print(f\"• {m.get('home_team')} vs {m.get('away_team')} @ {m.get('time')}\") for m in matches[:5]]"
+            echo "📊 Results:"
+            cat << 'PY' > show.py
+import json
+
+with open("output/matches.json", "r", encoding="utf-8") as f:
+    d = json.load(f)
+
+print("⏰ الوقت:", d.get("timestamp"))
+print("📅 التاريخ:", d.get("date"))
+
+matches = d.get("matches", [])
+print("🏟️ عدد المباريات:", len(matches))
+
+for m in matches[:5]:
+    print(f"• {m.get('home_team')} vs {m.get('away_team')} @ {m.get('time')}")
+PY
+
+            python show.py
           fi
 
       - name: Upload
