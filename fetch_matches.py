@@ -4,6 +4,30 @@ from datetime import datetime
 from playwright.async_api import async_playwright
 import re
 
+async def fetch_channel_details(page, btn):
+    """جلب تفاصيل القناة عند الضغط على الزر بشكل متوازي"""
+    name = await btn.inner_text()
+    try:
+        await btn.click()
+        await page.wait_for_selector(".modal-content", timeout=10000)
+        modal_text = await page.inner_text(".modal-content")
+
+        details = {}
+        for line in modal_text.split("\n"):
+            if ":" in line:
+                k, v = line.split(":", 1)
+                details[k.strip()] = v.strip()
+
+        # اغلاق البوب اب
+        close_btn = await page.query_selector(".modal-header button.close, .modal-footer button")
+        if close_btn:
+            await close_btn.click()
+        await page.wait_for_timeout(300)  # لتجنب مشاكل JS
+
+        return {"name": name.strip(), "details": details}
+    except:
+        return {"name": name.strip(), "details": None}
+
 async def fetch_matches():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -14,8 +38,8 @@ async def fetch_matches():
         await page.wait_for_timeout(5000)
         
         await page.wait_for_selector("tr.jtable-data-row", state="attached", timeout=30000)
-        
         print("Extracting matches...")
+        
         rows = await page.query_selector_all("tr.jtable-data-row")
         matches = []
 
@@ -37,52 +61,23 @@ async def fetch_matches():
             homeDiv = await row.query_selector('.MagicTableLeftFlag')
             if homeDiv:
                 style = await homeDiv.evaluate('el => el.style.background')
-                match = re.search(r'url\("?(.+?)"?\)', style)
-                if match:
-                    url = match.group(1)
+                match_ = re.search(r'url\("?(.+?)"?\)', style)
+                if match_:
+                    url = match_.group(1)
                     homeFlag = url if url.startswith('http') else 'https://www.sporteventz.com' + url
 
             awayFlag = None
             awayDiv = await row.query_selector('.MagicTableRightFlag')
             if awayDiv:
                 style = await awayDiv.evaluate('el => el.style.background')
-                match = re.search(r'url\("?(.+?)"?\)', style)
-                if match:
-                    url = match.group(1)
+                match_ = re.search(r'url\("?(.+?)"?\)', style)
+                if match_:
+                    url = match_.group(1)
                     awayFlag = url if url.startswith('http') else 'https://www.sporteventz.com' + url
 
-            # القنوات
+            # القنوات بشكل متوازي
             channel_buttons = await row.query_selector_all('button[id^="btnsub"]')
-            channels = []
-
-            for btn in channel_buttons:
-                name = await btn.inner_text()
-                try:
-                    await btn.click()
-                    await page.wait_for_selector(".modal-content", timeout=10000)
-                    modal_text = await page.inner_text(".modal-content")
-
-                    details = {}
-                    for line in modal_text.split("\n"):
-                        if ":" in line:
-                            k, v = line.split(":", 1)
-                            details[k.strip()] = v.strip()
-
-                    channels.append({
-                        "name": name.strip(),
-                        "details": details
-                    })
-
-                    # اغلاق البوب اب
-                    close_btn = await page.query_selector(".modal-header button.close, .modal-footer button")
-                    if close_btn:
-                        await close_btn.click()
-                    await page.wait_for_timeout(500)
-                except:
-                    channels.append({
-                        "name": name.strip(),
-                        "details": None
-                    })
+            channels = await asyncio.gather(*[fetch_channel_details(page, btn) for btn in channel_buttons])
 
             matches.append({
                 "league": league,
@@ -96,11 +91,11 @@ async def fetch_matches():
         
         await browser.close()
         
+        # حفظ JSON
         output = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "matches": matches
         }
-        
         with open("matches.json", "w", encoding="utf-8") as f:
             json.dump(output, f, ensure_ascii=False, indent=4)
         
