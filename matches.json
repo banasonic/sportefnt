@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-03-29 21:49:50",
+    "last_updated": "2026-03-29 22:38:48",
     "matches": [
         {
             "league": "Germany Amateur, U19 DFB Nachwuchsliga, League A, Group B",
@@ -9,10 +9,22 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "time": "Sunday, 29 March 2026 09:00",
             "channels": [
-                "Sky Bundesliga HD",
-                "Sky Sport News Germany",
-                "Sky Sport News Germany HD",
-                "Sky Sport Top Event HD"
+                {
+                    "name": "Sky Bundesliga HD",
+                    "details": null
+                },
+                {
+                    "name": "Sky Sport News Germany",
+                    "details": null
+                },
+                {
+                    "name": "Sky Sport News Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Sky Sport Top Event HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -23,7 +35,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
             "time": "Sunday, 29 March 2026 10:00",
             "channels": [
-                "Canal 11 Portugal HD"
+                {
+                    "name": "Canal 11 Portugal HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -34,7 +49,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
             "time": "Sunday, 29 March 2026 10:00",
             "channels": [
-                "TVP Sport Poland HD"
+                {
+                    "name": "TVP Sport Poland HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -45,7 +63,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
             "time": "Sunday, 29 March 2026 10:15",
             "channels": [
-                "ESPN Netherlands HD"
+                {
+                    "name": "ESPN Netherlands HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -56,8 +77,14 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
             "time": "Sunday, 29 March 2026 11:00",
             "channels": [
-                "Sportdigital 1 Plus Germany HD",
-                "Sportklub 3 Croatia HD"
+                {
+                    "name": "Sportdigital 1 Plus Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 3 Croatia HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -68,7 +95,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/kr.png",
             "time": "Sunday, 29 March 2026 11:00",
             "channels": [
-                "Diema Sport 2 Bulgaria HD"
+                {
+                    "name": "Diema Sport 2 Bulgaria HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -79,8 +109,14 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "time": "Sunday, 29 March 2026 11:00",
             "channels": [
-                "Nova Sport 2 Czech HD",
-                "Nova Sport 2 Czechia HD"
+                {
+                    "name": "Nova Sport 2 Czech HD",
+                    "details": null
+                },
+                {
+                    "name": "Nova Sport 2 Czechia HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -91,7 +127,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/sk.png",
             "time": "Sunday, 29 March 2026 11:00",
             "channels": [
-                "RTVS Sport Slovakia HD"
+                {
+                    "name": "RTVS Sport Slovakia HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -102,7 +141,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "time": "Sunday, 29 March 2026 12:00",
             "channels": [
-                "DAZN 1 Bar Germany HD"
+                {
+                    "name": "DAZN 1 Bar Germany HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -113,7 +155,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
             "time": "Sunday, 29 March 2026 12:30",
             "channels": [
-                "ESPN Netherlands HD"
+                {
+                    "name": "ESPN Netherlands HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -124,13 +169,34 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ge.png",
             "time": "Sunday, 29 March 2026 13:00",
             "channels": [
-                "DAZN 2 Bar Germany HD",
-                "Diema Sport 3 Bulgaria HD",
-                "Digi Sport 2 Romania",
-                "Digi Sport 2 Romania HD",
-                "Prima Sport 1",
-                "Prima Sport 1 HD",
-                "Sportklub 2 Croatia HD"
+                {
+                    "name": "DAZN 2 Bar Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Diema Sport 3 Bulgaria HD",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 2 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 2 Romania HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1 HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 2 Croatia HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -141,7 +207,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "time": "Sunday, 29 March 2026 14:00",
             "channels": [
-                "DAZN 1 Bar Germany HD"
+                {
+                    "name": "DAZN 1 Bar Germany HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -152,10 +221,22 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/by.png",
             "time": "Sunday, 29 March 2026 14:00",
             "channels": [
-                "Diema Sport 2 Bulgaria HD",
-                "Polsat Sport Premium 1 Poland HD",
-                "Prima Sport 2",
-                "Prima Sport 2 HD"
+                {
+                    "name": "Diema Sport 2 Bulgaria HD",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport Premium 1 Poland HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 2",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 2 HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -166,7 +247,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
             "time": "Sunday, 29 March 2026 14:30",
             "channels": [
-                "Diema Sport 1 Bulgaria HD"
+                {
+                    "name": "Diema Sport 1 Bulgaria HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -177,8 +261,14 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
             "time": "Sunday, 29 March 2026 14:30",
             "channels": [
-                "Max Sport 1 Croatia HD",
-                "Max Sport 2 Croatia HD"
+                {
+                    "name": "Max Sport 1 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "Max Sport 2 Croatia HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -189,9 +279,18 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
             "time": "Sunday, 29 March 2026 16:30",
             "channels": [
-                "Arena Sport 6 Croatia HD",
-                "DAZN 2 Bar Germany HD",
-                "Max Sport 4 Bulgaria HD"
+                {
+                    "name": "Arena Sport 6 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "DAZN 2 Bar Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Max Sport 4 Bulgaria HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -202,7 +301,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "time": "Sunday, 29 March 2026 16:30",
             "channels": [
-                "DAZN 1 Bar Germany HD"
+                {
+                    "name": "DAZN 1 Bar Germany HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -213,9 +315,18 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
             "time": "Sunday, 29 March 2026 19:00",
             "channels": [
-                "Sport TV 1 Portugal HD",
-                "Sportdigital Germany HD",
-                "TF1 HD"
+                {
+                    "name": "Sport TV 1 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportdigital Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "TF1 HD",
+                    "details": null
+                }
             ]
         },
         {
@@ -226,7 +337,10 @@
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
             "time": "Sunday, 29 March 2026 20:00",
             "channels": [
-                "Sport TV 1 Portugal HD"
+                {
+                    "name": "Sport TV 1 Portugal HD",
+                    "details": null
+                }
             ]
         }
     ]
