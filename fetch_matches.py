@@ -5,12 +5,13 @@ from playwright.async_api import async_playwright
 import re
 
 async def fetch_channel_details(page, btn):
-    """جلب تفاصيل القناة عند الضغط على الزر بشكل متوازي"""
+    """جلب تفاصيل القناة مع انتظار ظهور البوب اب بشكل صحيح"""
     name = await btn.inner_text()
     try:
         await btn.click()
-        await page.wait_for_selector(".modal-content", timeout=10000)
-        modal_text = await page.inner_text(".modal-content")
+        # انتظر ظهور البوب اب بشكل واضح
+        modal = await page.wait_for_selector(".modal-content", state="visible", timeout=10000)
+        modal_text = await modal.inner_text()
 
         details = {}
         for line in modal_text.split("\n"):
@@ -22,9 +23,10 @@ async def fetch_channel_details(page, btn):
         close_btn = await page.query_selector(".modal-header button.close, .modal-footer button")
         if close_btn:
             await close_btn.click()
-        await page.wait_for_timeout(300)
+        await page.wait_for_timeout(300)  # لتجنب مشاكل JS
+
         return {"name": name.strip(), "details": details}
-    except:
+    except Exception:
         return {"name": name.strip(), "details": None}
 
 async def fetch_match(page, row):
@@ -87,11 +89,12 @@ async def fetch_matches():
         rows = await page.query_selector_all("tr.jtable-data-row")
         print(f"Found {len(rows)} matches. Fetching in parallel...")
 
-        # كل المباريات تعمل بشكل متوازي
+        # كل المباريات تعمل بشكل متوازي مع قنواتها
         matches = await asyncio.gather(*[fetch_match(page, row) for row in rows])
         
         await browser.close()
 
+        # حفظ JSON
         output = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "matches": matches
