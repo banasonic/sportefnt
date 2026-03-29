@@ -24,12 +24,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install deps
-        run: |
-          pip install playwright beautifulsoup4 requests lxml
+        run: pip install playwright beautifulsoup4 requests lxml
 
       - name: Install browser
-        run: |
-          playwright install chromium --with-deps
+        run: playwright install chromium --with-deps
 
       - name: Run scraper
         run: |
@@ -45,28 +43,15 @@ jobs:
             python src/generate_html.py
           fi
 
-      # ✅ الحل النهائي بدون أخطاء YAML
+      # ✅ نسخة آمنة جداً (بدون Python معقد)
       - name: Show results
         run: |
           if [ -f output/matches.json ]; then
-            echo "📊 Results:"
-            cat << 'PY' > show.py
-import json
-
-with open("output/matches.json", "r", encoding="utf-8") as f:
-    d = json.load(f)
-
-print("⏰ الوقت:", d.get("timestamp"))
-print("📅 التاريخ:", d.get("date"))
-
-matches = d.get("matches", [])
-print("🏟️ عدد المباريات:", len(matches))
-
-for m in matches[:5]:
-    print(f"• {m.get('home_team')} vs {m.get('away_team')} @ {m.get('time')}")
-PY
-
-            python show.py
+            echo "📊 Matches file created successfully"
+            wc -l output/matches.json
+            head -n 20 output/matches.json
+          else
+            echo "❌ No data found"
           fi
 
       - name: Upload
