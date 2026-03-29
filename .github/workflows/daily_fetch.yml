@@ -27,7 +27,7 @@ jobs:
           sudo playwright install-deps chromium
 
       - name: Run fetch script
-        run: python fetch_matches.py
+        run: python fetch_matchesar.py
 
       - name: Commit and push changes
         run: |
