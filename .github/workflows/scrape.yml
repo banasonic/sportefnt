@@ -80,20 +80,20 @@ jobs:
             echo "📊 ملخص الاستخراج"
             echo "═══════════════════════════════════════"
             cat output/matches.json | python3 -c "
-import sys, json
-d = json.load(sys.stdin)
-print(f'⏰ الوقت: {d.get(\"timestamp\", \"N/A\")}')
-print(f'📅 التاريخ: {d.get(\"date\", \"N/A\")}')
-print(f'🏟️ إجمالي المباريات: {d.get(\"total_matches\", len(d.get(\"matches\", [])))}')
-print('')
-print('📋 المباريات المستخرجة:')
-for m in d.get('matches', [])[:5]:
+    import sys, json
+    d = json.load(sys.stdin)
+    print(f'⏰ الوقت: {d.get(\"timestamp\", \"N/A\")}')
+    print(f'📅 التاريخ: {d.get(\"date\", \"N/A\")}')
+    print(f'🏟️ إجمالي المباريات: {d.get(\"total_matches\", len(d.get(\"matches\", [])))}')
+    print('')
+    print('📋 المباريات المستخرجة:')
+    for m in d.get('matches', [])[:5]:
     ch = m.get('channel', 'غير محدد')
     freq = m.get('frequency', '-')
     print(f'  • {m.get(\"home_team\", \"?\")} vs {m.get(\"away_team\", \"?\")} @ {m.get(\"time\", \"?\")}')
     if ch:
-        print(f'    📺 {ch} | 📡 {freq} {m.get(\"polarization\", \"H\")}')
-print(f'  ... و {max(0, len(d.get(\"matches\", [])) - 5)} مباريات أخرى')
+    print(f'    📺 {ch} | 📡 {freq} {m.get(\"polarization\", \"H\")}')
+    print(f'  ... و {max(0, len(d.get(\"matches\", [])) - 5)} مباريات أخرى')
 "
           fi
 
