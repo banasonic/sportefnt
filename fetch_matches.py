@@ -87,9 +87,7 @@ for row in rows:
         "time": time,
         "channels": channels
     })
-        
-        await browser.close()
-        
+                
         # Save to JSON
         output = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
