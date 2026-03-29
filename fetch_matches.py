@@ -14,7 +14,7 @@ async def fetch_matches():
         await page.wait_for_timeout(5000) # Wait for JS to run
         
         # Wait for the table to load
-        await page.wait_for_selector("tr.jtable-data-row", timeout=30000)
+        await page.wait_for_selector("tr.jtable-data-row", state="attached", timeout=30000)
         
         print("Extracting matches...")
         matches = await page.evaluate("""() => {
