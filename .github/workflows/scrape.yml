@@ -1,4 +1,4 @@
-name: Sport Events Scraper
+name: Sport Events Scraper (JSON Only)
 
 on:
   schedule:
@@ -7,77 +7,52 @@ on:
   push:
     branches: [main, master]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
 
     steps:
+      # تحميل الكود
       - uses: actions/checkout@v4
 
+      # Python
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # تثبيت المكتبات
       - name: Install deps
         run: pip install playwright beautifulsoup4 requests lxml
 
+      # تثبيت المتصفح
       - name: Install browser
         run: playwright install chromium --with-deps
 
+      # تشغيل السكريبر
       - name: Run scraper
         run: |
+          echo "🏆 بدء استخراج البيانات..."
           if [ -f src/advanced_scraper.py ]; then
             python src/advanced_scraper.py
           else
             python src/scraper.py
           fi
 
-      - name: Generate HTML
-        run: |
-          if [ -s output/matches.json ]; then
-            python src/generate_html.py
-          fi
-
-      # ✅ نسخة آمنة جداً (بدون Python معقد)
-      - name: Show results
+      # التحقق من JSON
+      - name: Verify JSON
         run: |
           if [ -f output/matches.json ]; then
-            echo "📊 Matches file created successfully"
-            wc -l output/matches.json
-            head -n 20 output/matches.json
+            echo "✅ JSON تم إنشاؤه"
+            wc -c output/matches.json
           else
-            echo "❌ No data found"
+            echo "❌ لم يتم إنشاء JSON"
+            exit 1
           fi
 
-      - name: Upload
+      # رفع الملف كـ Artifact
+      - name: Upload JSON
         uses: actions/upload-artifact@v4
         with:
-          name: matches
-          path: output/
-
-  deploy:
-    needs: scrape
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/configure-pages@v4
-
-      - name: Prepare
-        run: |
-          mkdir -p _site
-          cp output/matches.json _site/ 2>/dev/null || echo '{}' > _site/matches.json
-          cp output/index.html _site/ 2>/dev/null || true
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          name: matches-json
+          path: output/matches.json
+          retention-days: 7
