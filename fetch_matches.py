@@ -2,6 +2,7 @@ import asyncio
 import json
 from datetime import datetime
 from playwright.async_api import async_playwright
+import re
 
 async def fetch_matches():
     async with async_playwright() as p:
@@ -19,17 +20,23 @@ async def fetch_matches():
         matches = []
 
         for row in rows:
-            league = await row.query_selector_eval('.MagicTableRowHeadline', 'el => el.textContent.trim()') if await row.query_selector('.MagicTableRowHeadline') else None
-            homeTeam = await row.query_selector_eval('.MagicTableRowMainHomeTeamName', 'el => el.textContent.trim()') if await row.query_selector('.MagicTableRowMainHomeTeamName') else None
-            awayTeam = await row.query_selector_eval('.MagicTableRowMainAwayTeamName', 'el => el.textContent.trim()') if await row.query_selector('.MagicTableRowMainAwayTeamName') else None
-            time = await row.query_selector_eval('h3', 'el => el.textContent.trim()') if await row.query_selector('h3') else None
+            league_el = await row.query_selector('.MagicTableRowHeadline')
+            league = await league_el.inner_text() if league_el else None
 
-            # استخراج الأعلام مباشرة
+            homeTeam_el = await row.query_selector('.MagicTableRowMainHomeTeamName')
+            homeTeam = await homeTeam_el.inner_text() if homeTeam_el else None
+
+            awayTeam_el = await row.query_selector('.MagicTableRowMainAwayTeamName')
+            awayTeam = await awayTeam_el.inner_text() if awayTeam_el else None
+
+            time_el = await row.query_selector('h3')
+            time = await time_el.inner_text() if time_el else None
+
+            # الأعلام
             homeFlag = None
             homeDiv = await row.query_selector('.MagicTableLeftFlag')
             if homeDiv:
                 style = await homeDiv.evaluate('el => el.style.background')
-                import re
                 match = re.search(r'url\("?(.+?)"?\)', style)
                 if match:
                     url = match.group(1)
@@ -39,13 +46,12 @@ async def fetch_matches():
             awayDiv = await row.query_selector('.MagicTableRightFlag')
             if awayDiv:
                 style = await awayDiv.evaluate('el => el.style.background')
-                import re
                 match = re.search(r'url\("?(.+?)"?\)', style)
                 if match:
                     url = match.group(1)
                     awayFlag = url if url.startswith('http') else 'https://www.sporteventz.com' + url
 
-            # استخراج القنوات مع التفاصيل
+            # القنوات
             channel_buttons = await row.query_selector_all('button[id^="btnsub"]')
             channels = []
 
@@ -90,7 +96,6 @@ async def fetch_matches():
         
         await browser.close()
         
-        # حفظ JSON
         output = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "matches": matches
