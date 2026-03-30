@@ -1,188 +1,64 @@
 {
-    "last_updated": "2026-03-29 22:49:07",
+    "last_updated": "2026-03-30 01:15:12",
     "matches": [
         {
-            "league": "Germany Amateur, U19 DFB Nachwuchsliga, League A, Group B",
-            "homeTeam": "Schalke U19",
-            "awayTeam": "Kiel U19",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "time": "Sunday, 29 March 2026 09:00",
+            "league": "International Youth, U19 UEFA Euro. Champ. Qualif. League B R1, Gr. 2",
+            "homeTeam": "Kosovo U19",
+            "awayTeam": "Turkey U19",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/kos.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
+            "time": "Monday, 30 March 2026 12:00",
             "channels": [
                 {
-                    "name": "Sky Bundesliga HD",
-                    "details": null
-                },
-                {
-                    "name": "Sky Sport News Germany",
-                    "details": null
-                },
-                {
-                    "name": "Sky Sport News Germany HD",
-                    "details": null
-                },
-                {
-                    "name": "Sky Sport Top Event HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Portugal, U23 Liga Revelacao, Qualifying Round",
-            "homeTeam": "Estrela Amadora",
-            "awayTeam": "Rio Ave U23",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
-            "time": "Sunday, 29 March 2026 10:00",
-            "channels": [
-                {
-                    "name": "Canal 11 Portugal HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Poland, Ekstraliga, Women",
-            "homeTeam": "Pogon Tczew",
-            "awayTeam": "Katowice (W)",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
-            "time": "Sunday, 29 March 2026 10:00",
-            "channels": [
-                {
-                    "name": "TVP Sport Poland HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Netherlands, Eredivisie, Women",
-            "homeTeam": "Ajax (W)",
-            "awayTeam": "Zwolle (W)",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "time": "Sunday, 29 March 2026 10:15",
-            "channels": [
-                {
-                    "name": "ESPN Netherlands HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "England Amateur, The FA Women's Super League",
-            "homeTeam": "Chelsea (W)",
-            "awayTeam": "Aston Villa (W)",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
-            "time": "Sunday, 29 March 2026 11:00",
-            "channels": [
-                {
-                    "name": "Sportdigital 1 Plus Germany HD",
-                    "details": null
-                },
-                {
-                    "name": "Sportklub 3 Croatia HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "International Clubs, AFC Champions League, Women, Knockout Stage",
-            "homeTeam": "Wuhan Jiangda (W)",
-            "awayTeam": "Suwon (W)",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/cn.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/kr.png",
-            "time": "Sunday, 29 March 2026 11:00",
-            "channels": [
-                {
-                    "name": "Diema Sport 2 Bulgaria HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Germany Amateur, U19 DFB Nachwuchsliga, League A, Group D",
-            "homeTeam": "Stuttgart U19",
-            "awayTeam": "Bochum U19",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "time": "Sunday, 29 March 2026 11:00",
-            "channels": [
-                {
-                    "name": "Nova Sport 2 Czech HD",
-                    "details": null
-                },
-                {
-                    "name": "Nova Sport 2 Czechia HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Slovakia, 3. Liga, Center",
-            "homeTeam": "FTC Filakovo",
-            "awayTeam": "MFk Bytca",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/sk.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/sk.png",
-            "time": "Sunday, 29 March 2026 11:00",
-            "channels": [
-                {
-                    "name": "RTVS Sport Slovakia HD",
+                    "name": "TRT Spor HD",
                     "details": null
                 }
             ]
         },
         {
             "league": "Germany Amateur, Bundesliga, Women",
-            "homeTeam": "Bremen (W)",
-            "awayTeam": "Essen-Schönebeck (W)",
+            "homeTeam": "Hamburger SV",
+            "awayTeam": "Leverkusen (W)",
             "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "time": "Sunday, 29 March 2026 12:00",
+            "time": "Monday, 30 March 2026 16:00",
             "channels": [
                 {
                     "name": "DAZN 1 Bar Germany HD",
                     "details": null
-                }
-            ]
-        },
-        {
-            "league": "Netherlands, Eredivisie, Women",
-            "homeTeam": "PSV (W)",
-            "awayTeam": "NAC Breda",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "time": "Sunday, 29 March 2026 12:30",
-            "channels": [
+                },
                 {
-                    "name": "ESPN Netherlands HD",
+                    "name": "Sport1 Germany",
+                    "details": null
+                },
+                {
+                    "name": "Sport1 Germany HD",
                     "details": null
                 }
             ]
         },
         {
             "league": "International, International Friendly Games",
-            "homeTeam": "Lithuania",
-            "awayTeam": "Georgia",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/lt.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ge.png",
-            "time": "Sunday, 29 March 2026 13:00",
+            "homeTeam": "Cyprus",
+            "awayTeam": "Moldova",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/cy.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/md.png",
+            "time": "Monday, 30 March 2026 16:00",
             "channels": [
                 {
                     "name": "DAZN 2 Bar Germany HD",
                     "details": null
                 },
                 {
-                    "name": "Diema Sport 3 Bulgaria HD",
+                    "name": "Diema Sport 2 Bulgaria HD",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 2 Romania",
+                    "name": "Digi Sport 3 Romania",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 2 Romania HD",
+                    "name": "Polsat Sport 2 HD",
                     "details": null
                 },
                 {
@@ -194,151 +70,103 @@
                     "details": null
                 },
                 {
-                    "name": "Sportklub 2 Croatia HD",
+                    "name": "Sport 1 Czech",
+                    "details": null
+                },
+                {
+                    "name": "Sport 1 Czech HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 2 Portugal HD",
                     "details": null
                 }
             ]
         },
         {
-            "league": "Germany Amateur, Bundesliga, Women",
-            "homeTeam": "Wolfsburg (W)",
-            "awayTeam": "FC Union Berlin",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "time": "Sunday, 29 March 2026 14:00",
+            "league": "International Youth, U21 Friendly Games",
+            "homeTeam": "Netherlands U21",
+            "awayTeam": "Belgium U21",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/be.png",
+            "time": "Monday, 30 March 2026 16:30",
             "channels": [
                 {
-                    "name": "DAZN 1 Bar Germany HD",
+                    "name": "ESPN Netherlands HD",
                     "details": null
                 }
             ]
         },
         {
             "league": "International, International Friendly Games",
-            "homeTeam": "Armenia",
-            "awayTeam": "Belarus",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/am.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/by.png",
-            "time": "Sunday, 29 March 2026 14:00",
-            "channels": [
-                {
-                    "name": "Diema Sport 2 Bulgaria HD",
-                    "details": null
-                },
-                {
-                    "name": "Polsat Sport Premium 1 Poland HD",
-                    "details": null
-                },
-                {
-                    "name": "Prima Sport 2",
-                    "details": null
-                },
-                {
-                    "name": "Prima Sport 2 HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Bulgaria, Second Professional League",
-            "homeTeam": "Cherno. Burgas",
-            "awayTeam": "Dunav Ruse",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "time": "Sunday, 29 March 2026 14:30",
-            "channels": [
-                {
-                    "name": "Diema Sport 1 Bulgaria HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Croatia, 2. HNL",
-            "homeTeam": "HNK Orijent 1919",
-            "awayTeam": "NK Rudes",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
-            "time": "Sunday, 29 March 2026 14:30",
-            "channels": [
-                {
-                    "name": "Max Sport 1 Croatia HD",
-                    "details": null
-                },
-                {
-                    "name": "Max Sport 2 Croatia HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Spain, LaLiga 2",
-            "homeTeam": "Real Zaragoza",
-            "awayTeam": "Santander",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
-            "time": "Sunday, 29 March 2026 16:30",
-            "channels": [
-                {
-                    "name": "Arena Sport 6 Croatia HD",
-                    "details": null
-                },
-                {
-                    "name": "DAZN 2 Bar Germany HD",
-                    "details": null
-                },
-                {
-                    "name": "Max Sport 4 Bulgaria HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Germany Amateur, Bundesliga, Women",
-            "homeTeam": "Freiburg (W)",
-            "awayTeam": "Hoffenheim (W)",
+            "homeTeam": "Germany",
+            "awayTeam": "Ghana",
             "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "time": "Sunday, 29 March 2026 16:30",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/gh.png",
+            "time": "Monday, 30 March 2026 18:45",
             "channels": [
                 {
-                    "name": "DAZN 1 Bar Germany HD",
+                    "name": "Das Erste HD",
                     "details": null
-                }
-            ]
-        },
-        {
-            "league": "International, International Friendly Games",
-            "homeTeam": "Colombia",
-            "awayTeam": "France",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/co.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
-            "time": "Sunday, 29 March 2026 19:00",
-            "channels": [
+                },
+                {
+                    "name": "Diema Sport 3 Bulgaria HD",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania HD",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport 1",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport 1 HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1 HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport 1 Czech",
+                    "details": null
+                },
+                {
+                    "name": "Sport 1 Czech HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport 2 Czech",
+                    "details": null
+                },
+                {
+                    "name": "Sport 2 Czech HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport 2 Czechia HD",
+                    "details": null
+                },
                 {
                     "name": "Sport TV 1 Portugal HD",
                     "details": null
                 },
                 {
-                    "name": "Sportdigital Germany HD",
+                    "name": "SuperSport 2 Albania HD",
                     "details": null
                 },
                 {
-                    "name": "TF1 HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "International, International Friendly Games",
-            "homeTeam": "Colombia",
-            "awayTeam": "France",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/co.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
-            "time": "Sunday, 29 March 2026 20:00",
-            "channels": [
-                {
-                    "name": "Sport TV 1 Portugal HD",
+                    "name": "TVP Sport Poland HD",
                     "details": null
                 }
             ]
