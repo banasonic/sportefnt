@@ -1,64 +1,184 @@
 {
-    "last_updated": "2026-03-30 18:55:55",
+    "last_updated": "2026-03-31 00:48:30",
     "matches": [
         {
-            "league": "International Youth, U19 UEFA Euro. Champ. Qualif. League B R1, Gr. 2",
-            "homeTeam": "Kosovo U19",
-            "awayTeam": "Turkey U19",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/kos.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
-            "time": "Monday, 30 March 2026 12:00",
+            "league": "International Youth, U19 EURO, Elite round, Gr. 3",
+            "homeTeam": "France U19",
+            "awayTeam": "Croatia U19",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
+            "time": "Tuesday, 31 March 2026 10:00",
             "channels": [
                 {
-                    "name": "TRT Spor HD",
+                    "name": "Max Sport 1 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "Max Sport 2 Croatia HD",
                     "details": null
                 }
             ]
         },
         {
-            "league": "Germany Amateur, Bundesliga, Women",
-            "homeTeam": "Hamburger SV",
-            "awayTeam": "Leverkusen (W)",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "time": "Monday, 30 March 2026 16:00",
+            "league": "International Youth, U19 UEFA Euro. Champ. Qualif. League A R1, Gr. 5",
+            "homeTeam": "Croatia U19",
+            "awayTeam": "England U19",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
+            "time": "Tuesday, 31 March 2026 12:45",
             "channels": [
                 {
-                    "name": "DAZN 1 Bar Germany HD",
+                    "name": "Max Sport 1 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U19 EURO, Elite round, Gr. 5",
+            "homeTeam": "Romania U19",
+            "awayTeam": "Ukraine U19",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ua.png",
+            "time": "Tuesday, 31 March 2026 14:00",
+            "channels": [
+                {
+                    "name": "Digi Sport 1 Romania",
                     "details": null
                 },
                 {
-                    "name": "Sport1 Germany",
+                    "name": "Digi Sport 1 Romania HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U21 EURO, Qualification, Group H",
+            "homeTeam": "Hungary U21",
+            "awayTeam": "Ukraine U21",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hu.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ua.png",
+            "time": "Tuesday, 31 March 2026 14:30",
+            "channels": [
+                {
+                    "name": "M4 Sport Hungary",
                     "details": null
                 },
                 {
-                    "name": "Sport1 Germany HD",
+                    "name": "M4 Sport Hungary HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U21 EURO, Qualification, Group B",
+            "homeTeam": "Czech Rep. U21",
+            "awayTeam": "Gibraltar U21",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/cz.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/gi.png",
+            "time": "Tuesday, 31 March 2026 15:00",
+            "channels": [
+                {
+                    "name": "CT Sport Czech HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U19 EURO, Elite round, Gr. 2",
+            "homeTeam": "Portugal U19",
+            "awayTeam": "England U19",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
+            "time": "Tuesday, 31 March 2026 15:00",
+            "channels": [
+                {
+                    "name": "Canal 11 Portugal HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U21 EURO, Qualification, Group H",
+            "homeTeam": "Croatia U21",
+            "awayTeam": "Turkey U21",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
+            "time": "Tuesday, 31 March 2026 15:30",
+            "channels": [
+                {
+                    "name": "Max Sport 1 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, UEFA Nations League, Relegation/Promotion Playoffs",
+            "homeTeam": "Luxembourg",
+            "awayTeam": "Malta",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/lu.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/mt.png",
+            "time": "Tuesday, 31 March 2026 16:00",
+            "channels": [
+                {
+                    "name": "Polsat Sport 3 HD",
+                    "details": null
+                },
+                {
+                    "name": "Spiler 1 TV Hungary",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, UEFA Nations League, Relegation/Promotion Playoffs",
+            "homeTeam": "Latvia",
+            "awayTeam": "Gibraltar",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/lv.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/gi.png",
+            "time": "Tuesday, 31 March 2026 16:00",
+            "channels": [
+                {
+                    "name": "Arena 4 Hungary",
+                    "details": null
+                },
+                {
+                    "name": "Arena 4 Hungary HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U21 EURO, Qualification, Group B",
+            "homeTeam": "Bulgaria U21",
+            "awayTeam": "Azerbaijan U21",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/az.png",
+            "time": "Tuesday, 31 March 2026 16:00",
+            "channels": [
+                {
+                    "name": "Diema Sport 1 Bulgaria HD",
                     "details": null
                 }
             ]
         },
         {
             "league": "International, International Friendly Games",
-            "homeTeam": "Cyprus",
-            "awayTeam": "Moldova",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/cy.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/md.png",
-            "time": "Monday, 30 March 2026 16:00",
+            "homeTeam": "Norway",
+            "awayTeam": "Switzerland",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/no.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ch.png",
+            "time": "Tuesday, 31 March 2026 16:00",
             "channels": [
                 {
-                    "name": "DAZN 2 Bar Germany HD",
+                    "name": "Digi Sport 2 Romania",
                     "details": null
                 },
                 {
-                    "name": "Diema Sport 2 Bulgaria HD",
+                    "name": "Digi Sport 2 Romania HD",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 3 Romania",
-                    "details": null
-                },
-                {
-                    "name": "Polsat Sport 2 HD",
+                    "name": "Polsat Sport Premium 2 Poland HD",
                     "details": null
                 },
                 {
@@ -78,51 +198,153 @@
                     "details": null
                 },
                 {
-                    "name": "Sport TV 2 Portugal HD",
+                    "name": "Sport TV 1 Portugal HD",
                     "details": null
-                }
-            ]
-        },
-        {
-            "league": "International Youth, U21 Friendly Games",
-            "homeTeam": "Netherlands U21",
-            "awayTeam": "Belgium U21",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/be.png",
-            "time": "Monday, 30 March 2026 16:30",
-            "channels": [
+                },
                 {
-                    "name": "ESPN Netherlands HD",
+                    "name": "Sportklub 1 Croatia HD",
                     "details": null
                 }
             ]
         },
         {
             "league": "International, International Friendly Games",
-            "homeTeam": "Germany",
-            "awayTeam": "Ghana",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/gh.png",
-            "time": "Monday, 30 March 2026 18:45",
+            "homeTeam": "Serbia",
+            "awayTeam": "Saudi Arabia",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/rs.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/sa.png",
+            "time": "Tuesday, 31 March 2026 16:00",
             "channels": [
                 {
-                    "name": "Das Erste HD",
+                    "name": "Sportklub 4 Croatia",
                     "details": null
                 },
                 {
-                    "name": "Diema Sport 3 Bulgaria HD",
+                    "name": "Sportklub 4 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "Montenegro",
+            "awayTeam": "Slovenia",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/me.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/si.png",
+            "time": "Tuesday, 31 March 2026 16:00",
+            "channels": [
+                {
+                    "name": "Digi Sport 3 Romania",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 1 Romania",
+                    "name": "Prima Sport 2",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 1 Romania HD",
+                    "name": "Prima Sport 2 HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "Hungary",
+            "awayTeam": "Greece",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hu.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/gr.png",
+            "time": "Tuesday, 31 March 2026 17:00",
+            "channels": [
+                {
+                    "name": "M4 Sport Hungary",
                     "details": null
                 },
                 {
-                    "name": "Polsat Sport 1",
+                    "name": "M4 Sport Hungary HD",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport Extra 1",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Youth, U21 EURO, Qualification, Group B",
+            "homeTeam": "Portugal U21",
+            "awayTeam": "Scotland U21",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/sco.png",
+            "time": "Tuesday, 31 March 2026 18:30",
+            "channels": [
+                {
+                    "name": "Canal 11 Portugal HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "England",
+            "awayTeam": "Japan",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/jp.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "Match 4 HD Hungary",
+                    "details": null
+                },
+                {
+                    "name": "Match 4 Hungary",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport Extra 3",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 2 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 6 Albania HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "Netherlands",
+            "awayTeam": "Ecuador",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ec.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "Polsat Sport Extra 4",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 6 Portugal HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, WC Qualification, UEFA, Playoffs",
+            "homeTeam": "Bosnien Herzegovina",
+            "awayTeam": "Italy",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ba.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/it.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "Digi Sport 2 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 2 Romania HD",
                     "details": null
                 },
                 {
@@ -138,14 +360,6 @@
                     "details": null
                 },
                 {
-                    "name": "Sport 1 Czech",
-                    "details": null
-                },
-                {
-                    "name": "Sport 1 Czech HD",
-                    "details": null
-                },
-                {
                     "name": "Sport 2 Czech",
                     "details": null
                 },
@@ -158,15 +372,233 @@
                     "details": null
                 },
                 {
+                    "name": "Sportklub 1 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 1 Albania HD",
+                    "details": null
+                },
+                {
+                    "name": "Ziggo Sport 3 Netherlands",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, WC Qualification, UEFA, Playoffs",
+            "homeTeam": "Sweden",
+            "awayTeam": "Poland",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/se.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "Digi Sport 3 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 2",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 2 HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport 1 Czech",
+                    "details": null
+                },
+                {
+                    "name": "Sport 1 Czech HD",
+                    "details": null
+                },
+                {
                     "name": "Sport TV 1 Portugal HD",
                     "details": null
                 },
                 {
-                    "name": "SuperSport 2 Albania HD",
+                    "name": "Sportklub 4 Croatia",
                     "details": null
                 },
                 {
-                    "name": "TVP Sport Poland HD",
+                    "name": "Sportklub 4 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 5 Albania HD",
+                    "details": null
+                },
+                {
+                    "name": "TVP 1 Poland HD",
+                    "details": null
+                },
+                {
+                    "name": "Ziggo Sport 2 Netherlands",
+                    "details": null
+                },
+                {
+                    "name": "Ziggo Sport 2 Netherlands HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, WC Qualification, UEFA, Playoffs",
+            "homeTeam": "Kosovo",
+            "awayTeam": "Turkey",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/kos.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "Digi Sport 1 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 3",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 3 HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 5 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 3 Albania HD",
+                    "details": null
+                },
+                {
+                    "name": "Ziggo Sport 4 Netherlands",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, WC Qualification, UEFA, Playoffs",
+            "homeTeam": "Czech Rep.",
+            "awayTeam": "Denmark",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/cz.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/dk.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "Arena 4 Hungary HD",
+                    "details": null
+                },
+                {
+                    "name": "CT Sport Czech HD",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 4 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport 3 HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 4",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 4 HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 7 Portugal",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 4 Albania HD",
+                    "details": null
+                },
+                {
+                    "name": "Ziggo Sport 5 Netherlands",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "Ukraine",
+            "awayTeam": "Albania",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ua.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/al.png",
+            "time": "Tuesday, 31 March 2026 18:45",
+            "channels": [
+                {
+                    "name": "SuperSport 2 Albania HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "Spain",
+            "awayTeam": "Egypt",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/eg.png",
+            "time": "Tuesday, 31 March 2026 19:00",
+            "channels": [
+                {
+                    "name": "Polsat Sport Premium 2 Poland HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 3 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 2 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 7 Albania HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Spain, LaLiga 2",
+            "homeTeam": "Valladolid",
+            "awayTeam": "Cadiz",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
+            "time": "Tuesday, 31 March 2026 19:30",
+            "channels": [
+                {
+                    "name": "Arena Sport 2 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "Dazn 1 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Nova Sport 3 Czechia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International, International Friendly Games",
+            "homeTeam": "Argentina",
+            "awayTeam": "Zambia",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ar.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/zm.png",
+            "time": "Tuesday, 31 March 2026 23:15",
+            "channels": [
+                {
+                    "name": "Sport TV 3 Portugal HD",
                     "details": null
                 }
             ]
