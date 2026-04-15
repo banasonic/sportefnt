@@ -1,100 +1,22 @@
 {
-    "last_updated": "2026-04-13 01:20:45",
+    "last_updated": "2026-04-15 01:16:48",
     "matches": [
         {
-            "league": "Bulgaria, Second Professional League",
-            "homeTeam": "Etar Veliko Tarnovo",
-            "awayTeam": "Dunav Ruse",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "time": "Monday, 13 April 2026 09:45",
-            "channels": [
-                {
-                    "name": "Diema Sport 1 Bulgaria HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Romania, Liga 1, Relegation round",
-            "homeTeam": "Metaloglobus Bucuresti",
-            "awayTeam": "Csikszereda Miercurea",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
-            "time": "Monday, 13 April 2026 12:30",
+            "league": "International Clubs, Copa Libertadores, Group D",
+            "homeTeam": "Boca Juniors",
+            "awayTeam": "Barcelona SC",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ar.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ec.png",
+            "time": "Wednesday, 15 April 2026 00:00",
             "channels": [
                 {
                     "name": "Arena Sport 1 Croatia HD",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 1 Romania",
+                    "name": "Max Sport 4 Bulgaria HD",
                     "details": null
                 },
-                {
-                    "name": "Digi Sport 1 Romania HD",
-                    "details": null
-                },
-                {
-                    "name": "Prima Sport 1",
-                    "details": null
-                },
-                {
-                    "name": "Prima Sport 1 HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Bulgaria, First Professional League",
-            "homeTeam": "CSKA Sofia",
-            "awayTeam": "Levski Sofia",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "time": "Monday, 13 April 2026 13:00",
-            "channels": [
-                {
-                    "name": "Diema Sport 1 Bulgaria HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Turkiye, 1. Lig",
-            "homeTeam": "Sivas",
-            "awayTeam": "Istanbulspor",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
-            "time": "Monday, 13 April 2026 14:00",
-            "channels": [
-                {
-                    "name": "TRT Spor HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Russia, Premier League",
-            "homeTeam": "Akron Tolyatti",
-            "awayTeam": "Din. Moscow",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ru.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ru.png",
-            "time": "Monday, 13 April 2026 14:15",
-            "channels": [
-                {
-                    "name": "Arena Sport 2 Croatia HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "International Clubs, AFC Champions League Elite, Knockout stage",
-            "homeTeam": "Al Ahli Jeddah",
-            "awayTeam": "Lekhwiya",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/sa.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/qa.png",
-            "time": "Monday, 13 April 2026 14:45",
-            "channels": [
                 {
                     "name": "Sportdigital 1 Plus Germany HD",
                     "details": null
@@ -102,232 +24,320 @@
             ]
         },
         {
-            "league": "Romania, Liga 1, Championship round",
-            "homeTeam": "Rapid Bucuresti",
-            "awayTeam": "Arges Pitesti",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
-            "time": "Monday, 13 April 2026 15:30",
+            "league": "International Clubs, Copa Sudamericana, Group D",
+            "homeTeam": "Santos",
+            "awayTeam": "CD Recoleta",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/br.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/py.png",
+            "time": "Wednesday, 15 April 2026 00:30",
             "channels": [
                 {
-                    "name": "Arena Sport 3 Croatia HD",
+                    "name": "Sportdigital Germany HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Clubs, CONCACAF Champions Cup",
+            "homeTeam": "Cruz Azul",
+            "awayTeam": "Los Angeles FC",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/mx.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/us.png",
+            "time": "Wednesday, 15 April 2026 01:00",
+            "channels": [
+                {
+                    "name": "Polsat Sport 1 HD",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 1 Romania",
+                    "name": "Sportklub 1 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Clubs, CONCACAF Champions Cup",
+            "homeTeam": "America de Mexico",
+            "awayTeam": "Nashville",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/mx.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/us.png",
+            "time": "Wednesday, 15 April 2026 03:30",
+            "channels": [
+                {
+                    "name": "Sportdigital 1 Plus Germany HD",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 1 Romania HD",
+                    "name": "Sportklub 1 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Clubs, AFC Champions League Two, Knockout stage",
+            "homeTeam": "Bangkok United",
+            "awayTeam": "Gamba Osaka",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/th.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/jp.png",
+            "time": "Wednesday, 15 April 2026 12:15",
+            "channels": [
+                {
+                    "name": "Canal 11 Portugal HD",
                     "details": null
                 },
                 {
-                    "name": "Prima Sport 1",
+                    "name": "Diema Sport 3 Bulgaria HD",
                     "details": null
                 },
-                {
-                    "name": "Prima Sport 1 HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Croatia, 1. HNL",
-            "homeTeam": "Vukovar",
-            "awayTeam": "Dinamo Zagreb",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/hr.png",
-            "time": "Monday, 13 April 2026 16:00",
-            "channels": [
-                {
-                    "name": "Max Sport 1 Croatia HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Bulgaria, First Professional League",
-            "homeTeam": "Beroe Zagora",
-            "awayTeam": "Lok. Plovdiv",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
-            "time": "Monday, 13 April 2026 16:00",
-            "channels": [
-                {
-                    "name": "Diema Sport 1 Bulgaria HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Poland, Ekstraklasa",
-            "homeTeam": "Piast Gliwice",
-            "awayTeam": "Pogon Szczecin",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
-            "time": "Monday, 13 April 2026 17:00",
-            "channels": [
-                {
-                    "name": "Arena Sport 2 Croatia HD",
-                    "details": null
-                },
-                {
-                    "name": "Polsat Sport Extra 4",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Portugal, Liga Portugal 2",
-            "homeTeam": "Lusitania FC Lourosa",
-            "awayTeam": "Porto B",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
-            "time": "Monday, 13 April 2026 17:00",
-            "channels": [
-                {
-                    "name": "Sport TV Plus Portugal",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Turkiye, 1. Lig",
-            "homeTeam": "Sakaryaspor",
-            "awayTeam": "Esenler Erok",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/tr.png",
-            "time": "Monday, 13 April 2026 17:00",
-            "channels": [
-                {
-                    "name": "TRT Spor HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Hungary, NB I",
-            "homeTeam": "Kisvarda",
-            "awayTeam": "Debreceni",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/hu.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/hu.png",
-            "time": "Monday, 13 April 2026 18:00",
-            "channels": [
-                {
-                    "name": "M4 Sport Hungary",
-                    "details": null
-                },
-                {
-                    "name": "M4 Sport Hungary HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Netherlands, Eerste Divisie",
-            "homeTeam": "Jong Ajax",
-            "awayTeam": "FC Oss",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "time": "Monday, 13 April 2026 18:00",
-            "channels": [
-                {
-                    "name": "ESPN 2 Netherlands",
-                    "details": null
-                },
-                {
-                    "name": "ESPN 2 Netherlands HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Netherlands, Eerste Divisie",
-            "homeTeam": "Jong Utrecht",
-            "awayTeam": "Vitesse",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "time": "Monday, 13 April 2026 18:00",
-            "channels": [
                 {
                     "name": "ESPN Netherlands HD",
                     "details": null
-                }
-            ]
-        },
-        {
-            "league": "Netherlands, Eerste Divisie",
-            "homeTeam": "Jong Alkmaar",
-            "awayTeam": "Jong PSV",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/nl.png",
-            "time": "Monday, 13 April 2026 18:00",
-            "channels": [
+                },
                 {
-                    "name": "ESPN 3 Netherlands",
+                    "name": "Sportdigital Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 1 Croatia HD",
                     "details": null
                 }
             ]
         },
         {
-            "league": "International Clubs, AFC Champions League Elite, Knockout stage",
-            "homeTeam": "Al Hilal Rijad",
-            "awayTeam": "Al Sadd",
+            "league": "Romania, Liga 2, Promotion Round",
+            "homeTeam": "Sepsi OSK",
+            "awayTeam": "CS Voluntari",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
+            "time": "Wednesday, 15 April 2026 14:00",
+            "channels": [
+                {
+                    "name": "Digi Sport 1 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1 HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Slovenia, PrvaLiga",
+            "homeTeam": "Bravo Ljubljana",
+            "awayTeam": "Primorje",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/si.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/si.png",
+            "time": "Wednesday, 15 April 2026 14:30",
+            "channels": [
+                {
+                    "name": "Sport Klub Poland HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Bulgaria, First Professional League",
+            "homeTeam": "Cherno More Varna",
+            "awayTeam": "CSKA 1948",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
+            "time": "Wednesday, 15 April 2026 15:00",
+            "channels": [
+                {
+                    "name": "Diema Sport 1 Bulgaria HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 1 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Czech Republic, FNL",
+            "homeTeam": "Sparta Prague B",
+            "awayTeam": "Zbrojovka Brno",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/cz.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/cz.png",
+            "time": "Wednesday, 15 April 2026 15:00",
+            "channels": [
+                {
+                    "name": "CT Sport Czech HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Slovakia, Slovensky Pohar",
+            "homeTeam": "FK Kosice",
+            "awayTeam": "Tatran Presov",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/sk.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/sk.png",
+            "time": "Wednesday, 15 April 2026 16:00",
+            "channels": [
+                {
+                    "name": "RTVS Sport Slovakia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Romania, Liga 2, Promotion Round",
+            "homeTeam": "CSA Steaua",
+            "awayTeam": "Bihor Oradea",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
+            "time": "Wednesday, 15 April 2026 16:00",
+            "channels": [
+                {
+                    "name": "Digi Sport 1 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania HD",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1",
+                    "details": null
+                },
+                {
+                    "name": "Prima Sport 1 HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Poland, II Liga",
+            "homeTeam": "Warta Poznan",
+            "awayTeam": "Slask Wroclaw II",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pl.png",
+            "time": "Wednesday, 15 April 2026 16:00",
+            "channels": [
+                {
+                    "name": "TVP Sport Poland HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Slovenia, PrvaLiga",
+            "homeTeam": "Celje",
+            "awayTeam": "Olimpija Ljubljana",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/si.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/si.png",
+            "time": "Wednesday, 15 April 2026 16:30",
+            "channels": [
+                {
+                    "name": "Sport Klub Poland HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 3 Croatia HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Bulgaria, First Professional League",
+            "homeTeam": "Arda Kardzhali",
+            "awayTeam": "Ludogorets Razgrad",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/bg.png",
+            "time": "Wednesday, 15 April 2026 17:30",
+            "channels": [
+                {
+                    "name": "Diema Sport 1 Bulgaria HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "Saudi Arabia, Saudi Professional League",
+            "homeTeam": "AL Nassr FC",
+            "awayTeam": "Al Ittifaq",
             "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/sa.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/qa.png",
-            "time": "Monday, 13 April 2026 18:00",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/sa.png",
+            "time": "Wednesday, 15 April 2026 18:00",
             "channels": [
                 {
-                    "name": "ESPN 4 Netherlands HD",
+                    "name": "Max Sport 3 Bulgaria HD",
                     "details": null
                 },
                 {
-                    "name": "Sportdigital 1 Plus Germany HD",
+                    "name": "Prima Sport 3 HD",
+                    "details": null
+                },
+                {
+                    "name": "Spiler 1 TV Hungary",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 1 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportdigital Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportklub 1 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "SuperSport 2 Albania HD",
                     "details": null
                 }
             ]
         },
         {
-            "league": "Spain, LaLiga 2",
-            "homeTeam": "Valladolid",
-            "awayTeam": "Eibar",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
+            "league": "International Clubs, UEFA Champions League",
+            "homeTeam": "Bayern",
+            "awayTeam": "Real Madrid",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/de.png",
             "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
-            "time": "Monday, 13 April 2026 18:30",
+            "time": "Wednesday, 15 April 2026 19:00",
             "channels": [
                 {
-                    "name": "Arena Sport 6 Croatia HD",
+                    "name": "Arena Sport 1 Croatia HD",
                     "details": null
                 },
                 {
-                    "name": "Max Sport 2 Bulgaria HD",
+                    "name": "BTV Action HD",
+                    "details": null
+                },
+                {
+                    "name": "Canal Plus Action Austria HD",
+                    "details": null
+                },
+                {
+                    "name": "DAZN 1 Bar Germany HD",
+                    "details": null
+                },
+                {
+                    "name": "Dazn 1 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania",
+                    "details": null
+                },
+                {
+                    "name": "Digi Sport 1 Romania HD",
                     "details": null
                 },
                 {
                     "name": "Nova Sport 3 Czechia HD",
                     "details": null
-                }
-            ]
-        },
-        {
-            "league": "Romania, Liga 1, Championship round",
-            "homeTeam": "Univ. Cluj",
-            "awayTeam": "Univ. Craiova",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ro.png",
-            "time": "Monday, 13 April 2026 18:30",
-            "channels": [
-                {
-                    "name": "Arena Sport 7 Croatia HD",
-                    "details": null
-                },
-                {
-                    "name": "Digi Sport 1 Romania",
-                    "details": null
-                },
-                {
-                    "name": "Digi Sport 1 Romania HD",
-                    "details": null
                 },
                 {
                     "name": "Prima Sport 1",
@@ -336,35 +346,47 @@
                 {
                     "name": "Prima Sport 1 HD",
                     "details": null
+                },
+                {
+                    "name": "Tring Sport 1 Albania HD",
+                    "details": null
+                },
+                {
+                    "name": "TVP 1 Poland HD",
+                    "details": null
+                },
+                {
+                    "name": "TVP Sport Poland HD",
+                    "details": null
+                },
+                {
+                    "name": "Ziggo Sport 1 Netherlands HD",
+                    "details": null
                 }
             ]
         },
         {
-            "league": "Italy, Serie A",
-            "homeTeam": "Fiorentina",
-            "awayTeam": "Lazio",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/it.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/it.png",
-            "time": "Monday, 13 April 2026 18:45",
+            "league": "International Clubs, UEFA Champions League",
+            "homeTeam": "Arsenal",
+            "awayTeam": "Sporting",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
+            "time": "Wednesday, 15 April 2026 19:00",
             "channels": [
                 {
-                    "name": "Arena 4 Hungary HD",
+                    "name": "Arena Sport 2 Croatia HD",
                     "details": null
                 },
                 {
-                    "name": "Arena Sport 3 Croatia HD",
+                    "name": "Digi Sport 2 Romania",
                     "details": null
                 },
                 {
-                    "name": "Digi Sport 3 Romania",
+                    "name": "Digi Sport 2 Romania HD",
                     "details": null
                 },
                 {
-                    "name": "Eleven Sports 1 Poland HD",
-                    "details": null
-                },
-                {
-                    "name": "Max Sport 3 Bulgaria HD",
+                    "name": "Nova Sport 4 Czechia HD",
                     "details": null
                 },
                 {
@@ -376,137 +398,35 @@
                     "details": null
                 },
                 {
-                    "name": "Sport 1 Czech",
+                    "name": "Ring BG HD",
                     "details": null
                 },
                 {
-                    "name": "Sport 1 Czech HD",
+                    "name": "RSI LA 2 Switzerland HD",
                     "details": null
                 },
                 {
-                    "name": "Sport 2 Czech",
+                    "name": "RTS 2 Switzerland HD",
                     "details": null
                 },
                 {
-                    "name": "Sport 2 Czech HD",
+                    "name": "Sky Sport 1 Austria HD",
                     "details": null
                 },
                 {
-                    "name": "Sport 2 Czechia HD",
+                    "name": "Sport 1 Hungary HD",
                     "details": null
                 },
                 {
-                    "name": "Sport TV 2 Portugal HD",
+                    "name": "Sport TV 5 Portugal HD",
                     "details": null
                 },
                 {
-                    "name": "Tring Sport 1 Albania HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "France, Ligue 2",
-            "homeTeam": "Rodez Aveyron",
-            "awayTeam": "Troyes",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/fr.png",
-            "time": "Monday, 13 April 2026 18:45",
-            "channels": [
-                {
-                    "name": "Arena Sport 5 Croatia HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "England, Premier League",
-            "homeTeam": "Man Utd",
-            "awayTeam": "Leeds",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/eng.png",
-            "time": "Monday, 13 April 2026 19:00",
-            "channels": [
-                {
-                    "name": "Arena Sport 1 Croatia HD",
+                    "name": "SRF 2 Switzerland",
                     "details": null
                 },
                 {
-                    "name": "Canal Sport Czech HD",
-                    "details": null
-                },
-                {
-                    "name": "Dazn 1 Portugal HD",
-                    "details": null
-                },
-                {
-                    "name": "Diema Sport 2 Bulgaria HD",
-                    "details": null
-                },
-                {
-                    "name": "Match 4 HD Hungary",
-                    "details": null
-                },
-                {
-                    "name": "Match 4 Hungary",
-                    "details": null
-                },
-                {
-                    "name": "Sky Sport Premier League HD",
-                    "details": null
-                },
-                {
-                    "name": "Sky Sport Top Event HD",
-                    "details": null
-                },
-                {
-                    "name": "SuperSport 2 Albania HD",
-                    "details": null
-                }
-            ]
-        },
-        {
-            "league": "Spain, LaLiga",
-            "homeTeam": "Levante",
-            "awayTeam": "Getafe",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/es.png",
-            "time": "Monday, 13 April 2026 19:00",
-            "channels": [
-                {
-                    "name": "Arena Sport 2 Croatia HD",
-                    "details": null
-                },
-                {
-                    "name": "Dazn 2 Portugal HD",
-                    "details": null
-                },
-                {
-                    "name": "Digi Sport 4 Romania",
-                    "details": null
-                },
-                {
-                    "name": "Eleven Sports 2 Poland HD",
-                    "details": null
-                },
-                {
-                    "name": "Max Sport 4 Bulgaria HD",
-                    "details": null
-                },
-                {
-                    "name": "Nova Sport 4 Czechia HD",
-                    "details": null
-                },
-                {
-                    "name": "Prima Sport 3 HD",
-                    "details": null
-                },
-                {
-                    "name": "Spiler 2 TV Hungary",
-                    "details": null
-                },
-                {
-                    "name": "SuperSport 3 Albania HD",
+                    "name": "Tring Sport 2 Albania HD",
                     "details": null
                 },
                 {
@@ -520,29 +440,59 @@
             ]
         },
         {
-            "league": "Portugal, Primeira Liga",
-            "homeTeam": "Tondela",
-            "awayTeam": "Gil Vicente",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/pt.png",
-            "time": "Monday, 13 April 2026 19:15",
+            "league": "International Clubs, Copa Sudamericana, Group E",
+            "homeTeam": "Racing Club",
+            "awayTeam": "Botafogo",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ar.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/br.png",
+            "time": "Wednesday, 15 April 2026 22:00",
             "channels": [
                 {
-                    "name": "Sport TV 1 Portugal HD",
+                    "name": "Arena Sport 1 Croatia HD",
+                    "details": null
+                },
+                {
+                    "name": "Polsat Sport 1 HD",
+                    "details": null
+                },
+                {
+                    "name": "Sport TV 3 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportdigital Germany HD",
                     "details": null
                 }
             ]
         },
         {
-            "league": "Argentina, Primera LPF, Apertura",
-            "homeTeam": "Atl. Lanus",
-            "awayTeam": "CA Banfield",
-            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/ar.png",
-            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ar.png",
-            "time": "Monday, 13 April 2026 22:00",
+            "league": "International Clubs, Copa Libertadores, Group D",
+            "homeTeam": "Cruzeiro MG",
+            "awayTeam": "Univ. Catolica",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/br.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/cl.png",
+            "time": "Wednesday, 15 April 2026 22:00",
             "channels": [
                 {
-                    "name": "Arena Sport 1 Croatia HD",
+                    "name": "Sport TV 1 Portugal HD",
+                    "details": null
+                },
+                {
+                    "name": "Sportdigital 1 Plus Germany HD",
+                    "details": null
+                }
+            ]
+        },
+        {
+            "league": "International Clubs, Copa Libertadores, Group H",
+            "homeTeam": "Libertad Asuncion",
+            "awayTeam": "Rosario Central",
+            "homeFlag": "https://www.sporteventz.com/components/com_magictable/flags/py.png",
+            "awayFlag": "https://www.sporteventz.com/components/com_magictable/flags/ar.png",
+            "time": "Wednesday, 15 April 2026 22:00",
+            "channels": [
+                {
+                    "name": "Sport TV 2 Portugal HD",
                     "details": null
                 }
             ]
